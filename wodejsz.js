@@ -131,8 +131,9 @@ function soy_jysz_Info(){
             let result = JSON.parse(data)
             if(result.code==0){
                 gold=result.data.goldNow
-                txgold=gold/4000*0.35
-                console.log(`\n【${$.name}---用户信息】: \n---用户昵称：${result.data.nameNick}\n---当前剩余金币：${gold}\n---可提现金额：${txgold.toFixed(1)}`)
+                txgold=Math.floor(gold/4000)*0.4
+                credit=result.data.credit
+                console.log(`\n【${$.name}---用户信息】: \n---用户昵称：${result.data.nameNick}\n---当前剩余金币：${gold}\n---可提现金额：${txgold.toFixed(1)}\n---账户信用：${credit}`)
             }else{
                 console.log(`\n【${$.name}---用户信息】: ${result.msg}`)
             }
@@ -242,7 +243,7 @@ async function soy_jysz_TX() {
             if(result.code==0){
                 gold=result.data.goldNow
                 if (gold >= 5000){
-                    txgold=gold/4000*0.35
+                    txgold=Math.floor(gold/4000)*0.4
                     let key = CryptoJS.enc.Utf8.parse("5kosc7jy2w0fxx3s")
                     let plaintText = `{"moneyPick":${txgold}}`
                     let jm = CryptoJS.AES.encrypt(plaintText, key, {mode: CryptoJS.mode.ECB,padding: CryptoJS.pad.Pkcs7})
