@@ -1,5 +1,5 @@
 /*
-软件名称:返利好省
+软件名称:返 利 好 省
 完成时间：2021-11-6 @YaphetS0903
 脚本说明：返利好省。。。下载地址带邀请(介意的话appstore搜索下载)https://raw.githubusercontent.com/YaphetS0903/JStest/main/image/flhs.png
 保存到相册微信扫码，点击立即下单后下载
