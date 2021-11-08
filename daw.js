@@ -5,6 +5,9 @@
 https://v3.sdk.haowusong.com/api/channel/integral/pool?channel=dawbox  重写地址  https://ghproxy.com/https://github.com/LubooC/Script/blob/main/daw.js
 [MITM]
 hostname = v3.sdk.haowusong.com
+青龙必要变量: 
+dawck 
+抓包时的请求头上的token 
 */
 // [task_local]
 //#都爱玩
