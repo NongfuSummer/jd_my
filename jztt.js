@@ -16,7 +16,7 @@ https://api.st615.com/v1/user/info? url script-request-header https://raw.github
 
 [mitm]
 api.st615.com
-青龙变量 export jztturl='token'
+青龙无法使用
 
 */
 
